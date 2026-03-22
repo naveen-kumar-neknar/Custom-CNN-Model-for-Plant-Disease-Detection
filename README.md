@@ -95,24 +95,36 @@ streamlit run main.py
 
 ---
 
-⚠️ Model Loading Configuration
+## ⚠️ Model Loading Configuration
 
-The trained model is loaded inside main.py using the following line:
+The trained model is loaded inside `main.py` using the following line:
 
+```python
 model = load_model("trained_plant_disease_model.keras")
-Why this is important:
+```
+
+### Why this is important
 
 The application depends on this model file to make predictions.
-If the file path is incorrect, the application will not be able to load the model and will result in an error.
+If the file path is incorrect, the model will not load and the application will produce an error.
 
-When you need to update this:
-If you move the model file into another folder (e.g., model/)
-If you rename the model file
-Example:
+---
 
-If the model is moved into a folder named model, update the code as:
+### When to update this
 
+* If you move the model file into another folder (e.g., `model/`)
+* If you rename the model file
+
+---
+
+### Example
+
+If the model is moved into a folder named `model`, update the code as:
+
+```python
 model = load_model("model/trained_plant_disease_model.keras")
+```
+
 
 ---
 
