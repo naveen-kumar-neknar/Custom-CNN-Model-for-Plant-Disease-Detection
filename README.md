@@ -1,0 +1,1 @@
+# Custom-CNN-Model-for-Plant-Disease-Detection
